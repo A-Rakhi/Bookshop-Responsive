@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="author" content="Bookshop">
+  <meta name="description" content="bootstrap">
+  <meta name="keyword" content="html, meta tag, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bookshop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="response.css">
+
+</head>
+<body>
+<!------Log in----->
+
+<!--Modal: Login / Register Form-->
+
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+      <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+       <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-secondary darken-3" role="tablist">
+
+          <li class="nav-item">
+
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+
+            <!--Body-->
+
+            <div class="modal-body mb-1" style="background: #969696;" id="log">
+              <div class="md-form form-sm mb-3 mt-2">
+                <i class="fas fa-envelope prefix"></i>
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+              </div>
+
+              <div class="md-form form-sm mb-3">
+                <i class="fas fa-lock prefix"></i>
+               <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+
+            <!--Footer-->
+
+            <div class="modal-footer" style="background: #969696;">
+
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member? <a href="#panel8" class="text-warning font-weight-bold">Sign Up</a></p>
+                <p>Forgot <a href="#" class="text-light">Password?</a></p>
+              </div>
+
+              <button type="button" class="btn btn-outline-danger waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+
+            <div class="reg-section tab-pane fade" id="panel8" role="tabpanel">
+             <div class="modal-body">
+           <form>
+         <span class="user">User Name</span><br> <input class="f-user" type="text" name="first-name" placeholder="First name">
+  
+            <input  class="l-user" type="text" name="last-name" placeholder="last name">
+      
+         <br><span class="mail">Email</span><br><input  class="s-mail" type="Email" name="Email" placeholder="Enter your email address">
+   
+         <br><span class="pas">Password</span> <br><input class="s-pas" type="password" name="password" placeholder="Enter a password ">
+     <br>   
+  
+       <br><span class="gen">Gender:</span> <input type="radio" name="gender" value="Female"><span class="s-gen"> Female</span>
+          <input type="radio" name="gender" value="Male"><span class="s-gen"> Male</span>
+            <input type="radio" name="gender" value="Others"><span class="s-gen"> Others</span>
+      
+
+   <br><br>
+   <h5>Select Date Of Birth</h5><br>
+   
+    <select class="selected" Name="Date">
+    <option value="Date">Date</option>
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+  </select>
+  
+    <select Name="Month">
+    <option value="Month">Month</option>
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+  </select>
+  
+    <select Name="Year">
+    <option value="Year">Year</option>
+    <option value="1999">1999</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+  </select><br><br>
+  
+    <textarea style="margin-left: 70px!important;" placeholder="message">Location.</textarea><br>
+  <input class="sub" type="submit" value="submit">
+  <input class="res" type="reset"><br><br></form>
+           </div>
+            <!--Footer-->
+            <div class="modal-footer" style="background: #969696;;">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#log" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-danger waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+           </div>
+          <br>
+  </div> 
+</div>
+        <!--/.Panel 8-->
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+     <div class="text-center" style="background-color: #9696bd70;">
+         <a href="" class="btn btn-success btn-rounded my-1" data-toggle="modal" data-target="#modalLRForm">Launch Modal LogIn/Register</a>
+     </div>
+
+
+<!-----log in End--->
+
+
+  
+<!----log-out/modal--->
+
+   <section id="log-out">
+
+     <div class="modal" id="modal6">
+        <div class="modal-dialog">
+           <div class="modal-content bg-dark text-light">
+
+               <div class="modal-header">
+                 <h4 class="font-weight-bold">Log Out</h4>
+                        </div>
+
+             <div class="modal-body">
+                  <p>Are you sure want to log out..???</p>
+              </div>
+             <div class="modal-footer">
+                 <button class="btn btn-primary pl-3 pr-3 "data-dismiss="modal">Log Out</button>
+                 
+            </div>
+          </div>
+                
+      </div>  
+  </div>
+</section>
+
+
+
+
+<!---header-Section----->
+
+   
+<!------Nav1------->
+<section id="nav1">
+
+  <nav class="header-content navbar navbar-expand-md">
+
+    <div class="container">
+
+              <p class="flash"> <a href="#explore" style="color: red;text-decoration:none" > Flash Sales Going On </a></p>
+
+              <button class="navbar-toggler" data-target="#nav2" data-toggle="collapse">
+               <span class="navbar-toggler-icon"></span>
+                 </button>
+      
+               <div class="collapse navbar-collapse" id="nav2">
+
+           <ul class="navbar-nav text-center ml-auto">
+
+             <li class="list-inline-item"><a href="#blog" class="" style="text-decoration:none;color: #4421ec;">BLOG</a></li>
+   
+             <li class="list-inline-item ml-2"> <a href="#" data-target="#modal2" data-toggle="modal"style="text-decoration:none;color: #4421ec;">FeedBack </a></li>
+  
+              <li class="list-inline-item ml-2"  data-target="#modal6" data-toggle="modal"> <a href="#log-out" style="text-decoration:none; color:red;">Log Out </a></li>
+                  </ul>
+
+                 </div>
+            </div>
+           </div>
+         </div>
+     </nav>
+  </section>
+
+    <!--<div class="header">
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                      <p class="flash"> <a href="#explore" style="color: red;text-decoration:none" > Flash Sales Going On </a></p>
+                    </div>
+   
+                <div class="col-md-4">
+                  <ul >
+                   <li class="list-inline-item ml-2"><a href="#blog" class="" style="text-decoration:none">BLOG</a></li>
+   
+                    <li class="list-inline-item ml-2"> <a href="#" data-target="#modal2" data-toggle="modal"style="text-decoration:none">Feedback </a></li>
+  
+                    <li class="list-inline-item ml-2"  data-target="#modal6" data-toggle="modal"> <a href="#log-out" style="text-decoration:none; color:red;">Log Out </a></li>
+                  </ul>
+                 </div>
+   
+                </div>
+            </div> 
+        </div>
+      </div>
+----->
+
+
+<!------Menubar Start------->
+  <nav class="class1  navbar navbar-expand-md navbar-dark sticky-top "  >
+
+    <div class="container">
+
+       <a href="" class="navbar-brand text-warning">
+         <img src="img/01.png" width="130" > </a> 
+          <div class="search2">
+      <button class="btn btn-danger text-white px-3"  data-toggle="modal" data-target="#test" id="hide"><i class="fas fa-search"></i></button>
+      
+          </div>
+
+      
+
+     <button class="navbar-toggler" data-target="#mynav"data-toggle="collapse">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+      
+ 
+     <div class="collapse navbar-collapse "id="mynav">
+
+         <ul class="navbar-nav text-center ml-auto">
+
+          <li class="nav-item active mr-2"><a href="#home-section" class="nav-link ">Home</a></li>
+
+          <li class="nav-item"><a href="#About-section" class="text-light nav-link">About</a></li>
+
+          <li class="nav-item dropdown"><a href="" class="text-light nav-link dropdown-toggle"data-toggle="dropdown">Explore
+    </a>
+
+      <div class="dropdown-menu bg-secondary text-light">
+           <a href="#new-item"class="dropdown-item" target="_blank">New Itesms</a>
+           <a href="#top-rated"class="dropdown-item">Top rated books</a>
+           <a href="#explore"class="dropdown-item">Best Sell in last week</a>
+           <a href="#explore"class="dropdown-item">General knowlege</a>
+    
+       </div>
+    </li>
+
+    <li class="nav-item dropdown"><a href="" class="text-light nav-link dropdown-toggle"data-toggle="dropdown">Collection</a>
+
+        <div class="dropdown-menu bg-secondary text-light">
+           <a href="text-book.html"class="dropdown-item" target="_blank">Engeering Text Books</a>
+           <a href="#collection"class="dropdown-item">Medical Text Books</a>
+           <a href="#collection"class="dropdown-item">Humayan Ahmed</a>
+           <a href="#collection"class="dropdown-item">Text Books for School</a>
+           <a href="#collection"class="dropdown-item">Text Books for College</a>
+           <a href="#collection"class="dropdown-item">English Grammer</a>
+    
+          </div>
+    </li>
+   
+    <li class="nav-item"><a href="#contact" class="text-light nav-link">Contact</a></li>
+<div class="extra">
+  <ul>
+      <li class="list-inline-item"><a href="#blog" class="" style="text-decoration:none;color: #4421ec;">BLOG</a></li>
+       
+      <li class="list-inline-item ml-2"> <a href="#" data-target="#modal2" data-toggle="modal"style="text-decoration:none;color: #4421ec;">FeedBack </a></li>
+      
+      <li class="list-inline-item ml-2"  data-target="#modal6" data-toggle="modal"> <a href="#log-out" style="text-decoration:none; color:red;">Log Out </a></li>
+  </ul>
+   
+ </div>
+     
+ </ul>
+    <div class="search">
+      <button class="btn btn-danger text-white px-3"  data-toggle="modal" data-target="#test" id="hide"><i class="fas fa-search"></i></button>
+      
+    </div>
+
+
+    </div>
+  </div>
+  </nav>
+
+
+<!--Engineering Text---->
+
+
+   
+
+<!-----our news--->
+
+<section id="blog"  >
+    <div class="container pt-5" style="background-color: #469df433 ;">
+
+       <h1 class="text-center text-danger pt-4" style=" font-weight:bold;">Our Latest News<hr style="width: 400px; padding: 0"></h1><br>
+
+    <div class="container" style="background-color: #88bcea ;" >
+        
+        <div class="row">
+            <!-----1---->
+        <div class="col-lg-4 col-md-4 ">
+        <div class="card" >
+        <div class="card-body"style="background-color: #eae7e4e6">
+
+            <img src="img/1.jpg" width="100%">
+
+            <p class="subtitle text-danger">July 27,2020 </p>
+            <h4 class="text-warning " style="font-size: 1.3rem;">Benefits of Reading:Getting Smart thin,Healthy,Happy</h4>
+
+            <p class="card-text text-secondary" >
+                Reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it,  
+            </p>
+                <button class=" btn bg-primary text-light">Continue reading...</button>                
+        </div>
+        </div>
+        </div>
+             <!-----2---->
+        <div class="col-lg-4 col-md-4 ">
+            <div class="card">
+            <div class="card-body"style="background-color: #eae7e4e6">
+
+                <img src="img/2.jpg" width="100%">
+
+                <p class="subtitle">July 10,2020 </p>
+                <h4 class="text-success" style="font-size: 1.3rem;">8 Science-Backed Reasons to Read a (Real) Book  </h4>
+                <p class="card-text text-secondary" >
+                    Rader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it,  
+                </p>
+                <button class=" btn bg-primary text-light">Continue reading...</button>                
+            </div>
+            </div>
+            </div>
+                     <!-----3---->
+            <div class="col-lg-4 col-md-4 ">
+                <div class="card">
+                <div class="card-body"style="background-color: #eae7e4e6">
+                    <img src="img/3.jpg" width="100%">
+
+                    <p class="subtitle text-success">July 5,2019 </p>
+                    <h4 class="text-danger" style="font-size: 1.3rem;">Why Reading is important our children </h4>
+                    <p class="card-text text-secondary " >
+                        Reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it,  
+                    </p>
+                <button class=" btn bg-primary text-light">Continue reading...</button>                
+            </div>
+                </div>
+        </div>
+        </div>
+      
+        </div>
+        <br><br>
+    </div>
+</section>
+        <!-----our news End--->
+
+
+
+<!---section feeback--->
+   <section id="feedback">
+
+       <div class="modal" id="modal2">
+          <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-body mt-4">
+                  <div class="form-group">
+                  <input type="text" name="uname" placeholder="Username" class="form-control">
+              </div>
+                  <div class="form-group">
+                    <input type="email" name="Email" placeholder="Enter your email" class="form-control">
+                  </div>
+                <div class="form-group">
+                  <textarea placeholder="write your feeback.." class="form-control"></textarea>
+                  </div>
+              <div class="form-group">
+                 <button class="btn btn-success btn-block text-center">send</button>
+               </div>
+              </div>
+          <div class="modal-footer">
+             <button class="btn text-dark pl-3 pr-3 text-center close" data-dismiss="modal">Close</button>
+                </div>
+      </div>
+  </section>
+
+
+
+
+
+
+<!---Buy Section---->
+
+<div class="modal" id="modal3">
+          <div class="modal-dialog">
+             <div class="modal-content bg-dark text-light">
+
+                 <div class="modal-header">
+                <h4>This is your book</h4>
+                <button class="btn btn-secondary text-light"data-dismiss="modal">&times;</button>
+                          </div>
+
+               <div class="modal-body">
+                <div class="container">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. </p>  
+                      <span><strong>price $50</strong></span>
+                    </div>
+                     </div><br>
+
+               <div class="modal-footer">
+                       <button class="btn btn-danger pl-3 pr-3 text-center" data-target="#modal4" data-toggle="modal">Add to card</button>
+                     
+                   </div>
+                 </div>
+                  
+        </div>  
+   </div>
+
+ <!---Add card--->
+<div class="modal" id="modal4">
+          <div class="modal-dialog">
+             <div class="modal-content bg-dark text-light">
+
+                 <div class="modal-header">
+                 <h4>One piece</h4>
+                <button class="btn btn-secondary text-light"data-dismiss="modal">&times;</button>
+                          </div>
+
+               <div class="modal-body">
+                <div class="container">
+                    <div class="form-group">
+                  <input type="text" name="uname" placeholder="Username" class="form-control">
+              </div>
+                  <div class="form-group">
+                    <input type="email" name="Email" placeholder="Enter your email" class="form-control">
+                  </div>
+                <div class="form-group">
+                  <textarea placeholder="Address.." class="form-control"></textarea>
+                  </div>
+
+                 <div class="form-group">
+                   <button class="btn btn-success pl-3 pr-3 text-center" data-dismiss="modal">Confirm</button>
+                   </div> 
+                    <div class="modal-footer">
+                       <button class="btn text-light pl-3 pr-3 text-center close" data-dismiss="modal">Close</button>
+                                          
+                   </div>
+              
+                 </div>
+               </div>
+             </div>     
+        </div>  
+   </div>
+
+
+<!---Contact--->
+
+<section id="contact" >
+
+    <div class="footer-section text-center text-light bg-dark "style="padding:50px 0px 20px 0px">
+        <div class="container">
+            <img src="img/images.jpg" style="height: 50px;width: 50px;">
+
+            <h2><a href="" style="color: yellow">BookLovers</a> </h2>
+
+            <small>San Dhaka, CA 94102, BD</small> <small>Phone: <span class="text-warning">+880.123.4567</span> </small>
+             <br>
+            <p><small>1234 Some S</small>  <small >Fax: <span class="text-info">1.800.123.4566</span> </small></p>
+              
+            <a href=""><img src="img/i1.png" alt="F"></a>
+            <a href="" class="ml-3 "><img src="img/i2.png" alt=""></a>
+            <a href="" class="ml-3"><img src="img/i3.png" alt=""></a>
+            <a href="" class="ml-3"><img src="img/i4.png" alt=""></a>
+            <a href="" class="ml-3"><img src="img/i5.png" alt=""></a>
+
+            <p class="mt-4">Do you need any help? <a href="#click" data-target="#modal7" data-toggle="modal">Click Here</a> </p>
+            <p class="">Copyright © 2019</p>
+
+        </div>
+        </div>
+    </div>
+  
+</section>
+
+
+
+<!---section click/modal--->
+
+ <section id="click">
+
+  <div class="modal" id="modal7">
+        <div class="modal-dialog">
+           <div class="modal-content bg-dark text-light">
+               <div class="modal-header">
+         <h4>Contact Us</h4>
+                     <button class="btn btn-secondary text-light"data-dismiss="modal">&times;</button>
+                        </div>
+
+             <div class="modal-body">
+                  <div class="form-group">
+                      <span class=" float-left">Name</span><br> <input type="text" name="uname" class="form-control">
+                            </div>
+            <div class="form-group">
+                     <span class="float-left">Email</span><br> <input type="password" name="pswd" class="form-control">
+                 </div>
+             <div class="form-group">
+                      <span class="float-left">Message</span><br> <textarea class="form-control"></textarea>
+                      </div>
+            <div class="form-group">
+                     <button class="btn btn-primary btn-block text-center">send</button>
+               </div>                   
+                 </div>  
+
+             <div class="modal-footer">
+                     <button class="btn btn-danger pl-3 pr-3 "data-dismiss="modal">Close</button>
+                 
+            </div>
+          </div>
+                
+      </div>  
+ </div>
+</section>
+
+
+
+<!--search/modal--->
+ <div class="modal" id="test">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="card">
+             
+                      <div class="form-group mt-3">
+                        <input type="username" class="form-control" style="background-color: #1EC6B6;">
+                      
+                      <button class="btn btn-success form-control mt-2" style="width: 100px;margin-left: 186px;">Search</button>
+                  </div>
+             
+              </div>
+
+            </div>
+          </div>
+       
+    
+    
+  </div>
+
+<!---End Section End---->
+
+
+
+
+
+<script src="https://kit.fontawesome.com/3b83a3096d.js" crossorigin="anonymous"></script>   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

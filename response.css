@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px) {
+  #nav1
+  {
+  	visibility: collapse;
+  }
+}
+@media screen and (min-width: 767px) {
+  .extra
+  {
+  	visibility: collapse;
+  }
+}
+@media screen and (max-width: 993px) {
+  .search
+  {
+  	visibility: collapse;
+  }
+}
+@media screen and (min-width: 767px) {
+  .search2
+  {
+  	visibility: collapse;
+  }
+}
